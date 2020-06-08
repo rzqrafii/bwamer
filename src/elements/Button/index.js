@@ -17,7 +17,7 @@ export default function Button(props) {
   };
 
 //  pengecekkan button disable / loading
-  if (props.isDisable || props.isLoading) {
+  if (props.isDisable || props.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            isLoading) {
     if (props.isDisable) className.push("disabled");
     return (
       <span className={className.join(" ")} style={props.style}>
@@ -25,7 +25,7 @@ export default function Button(props) {
             // react.fragment
           <>
             <span className="spinner-border spinner-border-sm mx-5"></span>
-            <span className="sr-only">Loading...</span>
+            <span className="sr-only">Loading...</span>   
           </>
         ) : (
           props.children
@@ -69,13 +69,15 @@ export default function Button(props) {
       {props.children}
     </Button>
   );
+  
 }
 
 Button.propTypes = {
-  type: propTypes.oneOf(["button", "Link"]),
+  type: propTypes.oneOf(["button", "link"]),
   onClick: propTypes.func,
   target: propTypes.string,
   className: propTypes.string,
+  isExternal: propTypes.bool,
   isDisable: propTypes.bool,
   isLoading: propTypes.bool,
   isSmall: propTypes.bool,
