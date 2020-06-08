@@ -1,0 +1,9 @@
+{
+    // digunakan untuk menampilkan path tanpa harus ./../element (misalnya)
+    // dimulai dari base src hingga path path didalamnya (**/*)
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": ["src/**/*"]
+    // jadi ketika di tabulasi (tab) akan ada suggestion
+}
