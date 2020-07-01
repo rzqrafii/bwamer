@@ -61,13 +61,13 @@ export default function Button(props) {
 		}
 	}
 	return (
-		<Button
+		<button
 			className={className.join(" ")}
 			style={props.style}
 			onClick={onClick}
 		>
 			{props.children}
-		</Button>
+		</button>
 	);
 }
 
@@ -76,11 +76,12 @@ Button.propTypes = {
 	onClick: propTypes.func,
 	target: propTypes.string,
 	className: propTypes.string,
+	isPrimary: propTypes.bool,
 	isExternal: propTypes.bool,
 	isDisable: propTypes.bool,
 	isLoading: propTypes.bool,
 	isSmall: propTypes.bool,
 	isLarge: propTypes.bool,
 	isBlock: propTypes.bool,
-	hasShadow: propTypes.bool,
+	hasShadow: propTypes.bool
 };

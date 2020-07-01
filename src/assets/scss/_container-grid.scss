@@ -1,0 +1,95 @@
+.container-grid {
+    // menampilkan grid
+    display: grid;
+    // template kolomnya mengikuti bootstrap
+    grid-template-columns: repeat(12, 1fr);
+    // minmax 185px dari desain figma
+    grid-auto-rows: minmax(185px, auto);
+    grid-auto-flow: dense;
+    // gap atau jarak masing-masing baris
+    row-gap: 30px;
+    // gap atau jarak masing-masing kolom
+    column-gap: 30px;
+    position: relative;
+    z-index: 3;
+
+
+    // digunakan untuk misal classname container-grid sm
+    &.sm {
+        grid-auto-rows: minmax(245px, auto);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    // item untuk berapa kolom yang diambil dalam membuat sebuat konten/section, span 1 diambil dari bootstrap
+    .item {
+        &.column-1 {
+            grid-column-end: span 1;
+        }
+
+        &.column-2 {
+            grid-column-end: span 2;
+        }
+
+        &.column-3 {
+            grid-column-end: span 3;
+        }
+
+        &.column-4 {
+            grid-column-end: span 4;
+        }
+
+        &.column-5 {
+            grid-column-end: span 5;
+        }
+
+        &.column-6 {
+            grid-column-end: span 6;
+        }
+
+        &.column-7 {
+            grid-column-end: span 7;
+        }
+
+        &.column-8 {
+            grid-column-end: span 8;
+        }
+
+        &.column-9 {
+            grid-column-end: span 9;
+        }
+
+        &.column-10 {
+            grid-column-end: span 10;
+        }
+
+        &.column-11 {
+            grid-column-end: span 11;
+        }
+
+        &.column-12 {
+            grid-column-end: span 12;
+        }
+
+        // cukup 4 saja, hanya tambahkan ketika dibutuhkan lebih dari 4 span
+        &.row-1 {
+            grid-row-end: span 1;
+        }
+
+        &.row-2 {
+            grid-row-end: span 2;
+        }
+
+        &.row-3 {
+            grid-row-end: span 3;
+        }
+
+        &.row-4 {
+            grid-row-end: span 4;
+        }
+
+    }
+
+
+
+}
